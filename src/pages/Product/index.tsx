@@ -1,11 +1,12 @@
+import Product from "../../components/product-page";
+
+
+
+
 const ProductPage: React.FC = () => {
-    return (
-        <main>
-            <section>
-                <h1>Product Page!</h1>
-            </section>
-        </main>
-    );
-}
- 
+	return (
+        <Product />
+	);
+};
+
 export default ProductPage;

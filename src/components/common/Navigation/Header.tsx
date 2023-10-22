@@ -1,7 +1,8 @@
 import logo from "../../../assets/images/logo.svg";
-import cartIcon from "../../../assets/images/icon-cart.svg";
 import profileImage from "../../../assets/images/image-avatar.png";
 import Sidebar from "./Sidebar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 const Header: React.FC = () => {
 	return (
@@ -57,11 +58,7 @@ const Header: React.FC = () => {
 				</div>
 				<div className="flex items-center gap-x-5">
 					<div>
-						<img
-							src={cartIcon}
-							className="cursor-pointer"
-							alt="cart icon"
-						/>
+						<FontAwesomeIcon icon={faShoppingCart} />
 					</div>
 					<img
 						src={profileImage}

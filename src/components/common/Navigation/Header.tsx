@@ -1,14 +1,16 @@
 import logo from "../../../assets/images/logo.svg";
 import cartIcon from "../../../assets/images/icon-cart.svg";
 import profileImage from "../../../assets/images/image-avatar.png";
+import Sidebar from "./Sidebar";
 
 const Header: React.FC = () => {
 	return (
-		<header className="hidden md:block w-[100dvw]">
-			<section className="flex w-[80%] lg:w-[70%] mx-auto border-b border-b-GrayishBlue py-5 justify-between">
+		<header className=" w-[100dvw]">
+			<section className="flex w-[95%] md:w-[80%] lg:w-[70%] mx-auto md:border-b border-b-GrayishBlue py-5 justify-between">
 				<div className="flex gap-x-10 items-center">
-					<img src={logo} alt="logo" />
-					<nav>
+					<Sidebar />
+					<img className="" src={logo} alt="logo" />
+					<nav className="hidden md:block">
 						<ul className="flex gap-x-5 text-DarkGrayishBlue">
 							<li className="">
 								<a
@@ -63,7 +65,7 @@ const Header: React.FC = () => {
 					</div>
 					<img
 						src={profileImage}
-						className="h-[50px] rounded-full border-2 border-Orange cursor-pointer"
+						className="h-[50px] -z-20 rounded-full border-2 border-Orange cursor-pointer"
 						alt="profile image "
 					/>
 				</div>

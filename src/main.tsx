@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import Navigation from "./components/common/Navigation";
+import Navigation from "./components/common/Navigation/Navigation";
 import ProductPage from "./pages/Product";
 import Error from "./pages/error";
 

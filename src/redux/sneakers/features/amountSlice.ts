@@ -17,8 +17,13 @@ export const amountSlice = createSlice({
 		decrement: (state) => {
 			state.sneakerAmount -= 1;
 		},
+		incrementByAmount: (state, action) => {
+			state.sneakerAmount += action.payload
+		}
 	},
 });
 
-export const { increment, decrement } = amountSlice.actions;
+
+
+export const { increment, decrement, incrementByAmount } = amountSlice.actions;
 export default amountSlice.reducer;

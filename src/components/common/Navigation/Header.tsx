@@ -7,6 +7,7 @@ import { useState } from "react";
 import ShoppingCart from "./ShoppingCart";
 
 const Header: React.FC = () => {
+
 	const [shoppingCartToggled, setShoppingCartToggled] =
 		useState<boolean>(false);
 	return (

@@ -1,12 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons/faShoppingCart";
-import { useSelector, useDispatch } from "react-redux";
-import { increment, decrement } from "../../../redux/sneakers/features/amountSlice";
+import { useState } from "react";
+import { useSneakerDispatch, useSneakerSelector } from "../../../hooks/redux";
+import { incrementByAmount } from "../../../redux/sneakers/features/amountSlice";
 
 const ProductInfo: React.FC = () => {
-	const amount = useSelector((state) => state.amount.sneakerAmount)
-	const dispatch = useDispatch();
-	dispatch
+	const [buyAmount, setBuyAmount] = useState<number>(0);
+	const dispatch = useSneakerDispatch();
 	return (
 		<article className="max-w-md mx-5 md:mx-0 flex flex-col justify-evenly">
 			<header className="flex flex-col gap-y-1">
@@ -42,23 +42,27 @@ const ProductInfo: React.FC = () => {
 				<div className="flex items-center px-2 py-1 rounded-2xl bg-LightGrayishBlue w-[150px] text-2xl justify-around">
 					<button
 						onClick={() => {
-							amount !== 0 && dispatch(decrement());
+							buyAmount !== 0 && setBuyAmount((prev) => prev - 1);
 						}}
 						className="text-Orange font-bold p-1"
 						type="button"
 					>
 						-
 					</button>
-					<p className="text-lg">{amount}</p>
+					<p className="text-lg">{buyAmount}</p>
 					<button
-						onClick={() => dispatch(increment())}
+						onClick={() => setBuyAmount((prev) => prev + 1)}
 						className="text-Orange font-bold p-1"
 						type="button"
 					>
 						+
 					</button>
 				</div>
-				<button className="text-White bg-Orange w-[200px] justify-center gap-x-5 rounded-xl text-xl font-bold flex items-center">
+				<button
+					onClick={() => dispatch(incrementByAmount(buyAmount))}
+					type="button"
+					className="text-White bg-Orange w-[200px] justify-center gap-x-5 rounded-xl text-xl font-bold flex items-center"
+				>
 					<FontAwesomeIcon icon={faShoppingCart} />
 					Add to cart
 				</button>

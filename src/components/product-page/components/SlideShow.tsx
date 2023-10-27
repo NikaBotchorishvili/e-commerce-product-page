@@ -9,7 +9,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import images from "../../../assets/data.json";
 import Overlay from "../../common/Overlay";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import { useEffect, useRef } from "react";
 import useClickOutside from "../../../hooks/useClickOutside";
 
 const SlideShow: React.FC<Props> = ({

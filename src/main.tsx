@@ -6,7 +6,7 @@ import Navigation from "./components/common/Navigation/Navigation";
 import ProductPage from "./pages/Product";
 import Error from "./pages/error";
 import { Provider } from "react-redux";
-import { store } from "./redux/sneakers/store";
+import { store } from "./redux/shoppingCart/store";
 
 const router = createBrowserRouter([
 	{

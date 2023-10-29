@@ -68,7 +68,7 @@ const Header: React.FC = () => {
 							icon={faShoppingCart}
 							onClick={() => setShoppingCartToggled((prev) => !prev)}
 						/>
-						{shoppingCartToggled && <ShoppingCart />}
+						{shoppingCartToggled && <ShoppingCart setShoppingCartToggled={setShoppingCartToggled} />}
 					</div>
 					<img
 						src={profileImage}

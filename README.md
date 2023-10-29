@@ -1,27 +1,53 @@
-# React + TypeScript + Vite
+# Frontend Mentor - E-commerce product page solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+  - [Built with](#built-with)
+- [Author](#author)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Overview
 
-- Configure the top-level `parserOptions` property like this:
+### The challenge
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+Users should be able to:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Open a lightbox gallery by clicking on the large product image
+- Switch the large product image by clicking on the small thumbnail images
+- Add items to the cart
+- View the cart and remove items from it
+
+### Screenshot
+
+![image](https://github.com/NikaBotchorishvili/e-commerce-product-page/assets/58900787/2889d525-ae25-4775-a736-bfbfee0ed63f)
+![image](https://github.com/NikaBotchorishvili/e-commerce-product-page/assets/58900787/8db03a78-6e4a-4ba9-a4b6-1b3686f09213)
+
+### Links
+
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/ecommerce-product-page-built-with-reactjs-JWMSaSZnN9)
+- Live Site URL: [Live](https://e-commerce-product-page-risiv7w26-nikabotchorishvili.vercel.app/)
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [TailwindCSS](https://tailwindcss.com/) - For styles
+- [Redux-Toolkit](https://redux-toolkit.js.org/) - For State Management
+- [Framer Motion](https://www.framer.com/motion/) - For Animations
+
+## Author
+
+- Frontend Mentor - [@Nika Botchorishvili](https://www.frontendmentor.io/profile/NikaBotchorishvili)
+- Twitter - [@Nika Botchorishvili](https://www.linkedin.com/in/nika-botchorishvili-a27b09234/)

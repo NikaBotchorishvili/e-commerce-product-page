@@ -61,7 +61,7 @@ const Header: React.FC = () => {
 						</ul>
 					</nav>
 				</div>
-				<div className="flex items-center gap-x-5">
+				<div className="flex items-center gap-x-3">
 					<div>
 						<FontAwesomeIcon
 							className="cursor-pointer"

@@ -25,7 +25,7 @@ const SlideShow: React.FC<Props> = ({
 	});
 
 	return (
-		<>
+		<div className="md:block hidden">
 			<Overlay toggled={slideShowToggled} />
 			{slideShowToggled && (
 				<>
@@ -62,7 +62,7 @@ const SlideShow: React.FC<Props> = ({
 					</div>
 				</>
 			)}{" "}
-		</>
+		</div>
 	);
 };
 

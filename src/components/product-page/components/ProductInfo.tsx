@@ -8,17 +8,17 @@ const ProductInfo: React.FC = () => {
 	const [buyAmount, setBuyAmount] = useState<number>(0);
 	const dispatch = useSneakerDispatch();
 	return (
-		<article className="max-w-md mx-5 md:mx-0 flex flex-col justify-evenly">
+		<article className="flex flex-col md:max-w-md px-10 overflow-x-hidden md:px-0 justify-evenly  w-screen">
 			<header className="flex flex-col gap-y-1">
 				<h2 className="text-md text-Orange font-bold">
 					SNEAKER COMPANY
 				</h2>
-				<h1 className="text-5xl font-bold text-VeryDarkBlue">
+				<h1 className="text-4xl md:text-5xl font-bold text-VeryDarkBlue">
 					Fall Limited Edition Sneakers
 				</h1>
 			</header>
 
-			<span className="flex flex-col gap-y-3">
+			<span className="flex flex-col max-w-md gap-y-3">
 				<p>
 					These low-profile sneakers are your perfect casual wear
 					companion. Featuring a durable rubber outer sole, they'll
@@ -44,7 +44,7 @@ const ProductInfo: React.FC = () => {
 						onClick={() => {
 							buyAmount !== 0 && setBuyAmount((prev) => prev - 1);
 						}}
-						className="text-Orange font-bold p-1"
+						className="text-Orange font-bold p-1 active:opacity-80"
 						type="button"
 					>
 						-
@@ -52,7 +52,7 @@ const ProductInfo: React.FC = () => {
 					<p className="text-lg">{buyAmount}</p>
 					<button
 						onClick={() => setBuyAmount((prev) => prev + 1)}
-						className="text-Orange font-bold p-1"
+						className="text-Orange font-bold p-1 active:opacity-80"
 						type="button"
 					>
 						+
@@ -61,7 +61,7 @@ const ProductInfo: React.FC = () => {
 				<button
 					onClick={() => dispatch(incrementByAmount(buyAmount))}
 					type="button"
-					className="text-White bg-Orange w-[200px] justify-center gap-x-5 rounded-xl text-xl font-bold flex items-center"
+					className="text-White active:opacity-80 bg-Orange w-[180px] lg:w-[200px] justify-center gap-x-5 rounded-xl text-xl font-bold flex items-center"
 				>
 					<FontAwesomeIcon icon={faShoppingCart} />
 					Add to cart

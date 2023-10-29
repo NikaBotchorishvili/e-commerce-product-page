@@ -35,7 +35,7 @@ const ProductImages: React.FC = () => {
 				selectedImage={selectedImage}
 				setSelectedImage={setSelectedImage}
 			/>
-			<section className="w-screen md:min-w-[300px] md:max-w[350px] lg:max-w-[420px] flex flex-col gap-y-5">
+			<section className=" md:min-w-[300px] md:max-w[350px] w-screen md:w-[380px] flex flex-col gap-y-5">
 				<div className="relative">
 					<FontAwesomeIcon
 						className="md:hidden block absolute top-1/2 h-[25px] -translate-y-1/2 left-5 bg-White rounded-full p-2 w-[25px] cursor-pointer"
@@ -48,7 +48,7 @@ const ProductImages: React.FC = () => {
 					/>
 					<img
 						src={images[selectedImage].image}
-						className="w-screen md:min-w-[300px] md:max-w[350px] lg:max-w-[420px] object-cover object-top md:rounded-2xl"
+						className="md:min-w-[300px] md:max-w[350px] w-screen md:w-[380px]  object-cover object-top md:rounded-2xl"
 						alt=""
 						onClick={() => setSlideShowToggled(true) }
 					/>

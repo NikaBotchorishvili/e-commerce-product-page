@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons/faShoppingCart";
 import { useState } from "react";
-import { useSneakerDispatch, useSneakerSelector } from "../../../hooks/redux";
+import { useSneakerDispatch } from "../../../hooks/redux";
 import { incrementByAmount } from "../../../redux/shoppingCart/features/cartSlice";
 
 const ProductInfo: React.FC = () => {

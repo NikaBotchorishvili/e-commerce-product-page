@@ -1,12 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-type Product = {
-	name: string;
-	price: number;
-	amount: number;
-	imageUrl: string;
-};
-
 type stateType = {
 	amount: number;
 };

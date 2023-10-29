@@ -48,7 +48,7 @@ const ProductImages: React.FC = () => {
 					/>
 					<img
 						src={images[selectedImage].image}
-						className="md:min-w-[300px] md:max-w[350px] w-screen md:w-[380px]  object-cover object-top md:rounded-2xl"
+						className="md:min-w-[300px] md:max-w[350px] w-screen md:w-[380px]  object-fill object-top md:rounded-2xl"
 						alt=""
 						onClick={() => setSlideShowToggled(true) }
 					/>

@@ -61,7 +61,7 @@ const ProductInfo: React.FC = () => {
 				<button
 					onClick={() => dispatch(incrementByAmount(buyAmount))}
 					type="button"
-					className="text-White active:opacity-80 bg-Orange w-[180px] lg:w-[200px] justify-center gap-x-5 rounded-xl text-xl font-bold flex items-center"
+					className="text-White active:opacity-80 bg-Orange w-[180px] lg:w-[200px] justify-center gap-x-5 rounded-xl text-md sm:text-xl font-bold flex items-center"
 				>
 					<FontAwesomeIcon icon={faShoppingCart} />
 					Add to cart

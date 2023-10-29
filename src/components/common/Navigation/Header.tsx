@@ -7,7 +7,6 @@ import { useState } from "react";
 import ShoppingCart from "./ShoppingCart";
 
 const Header: React.FC = () => {
-
 	const [shoppingCartToggled, setShoppingCartToggled] =
 		useState<boolean>(false);
 	return (
@@ -66,9 +65,14 @@ const Header: React.FC = () => {
 						<FontAwesomeIcon
 							className="cursor-pointer"
 							icon={faShoppingCart}
-							onClick={() => setShoppingCartToggled((prev) => !prev)}
+							onClick={() =>
+								setShoppingCartToggled((prev) => !prev)
+							}
 						/>
-						{shoppingCartToggled && <ShoppingCart setShoppingCartToggled={setShoppingCartToggled} />}
+						<ShoppingCart
+							setShoppingCartToggled={setShoppingCartToggled}
+							shoppingCartToggled={shoppingCartToggled}
+						/>
 					</div>
 					<img
 						src={profileImage}
